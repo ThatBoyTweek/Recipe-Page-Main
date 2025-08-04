@@ -1,0 +1,174 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:wght@400;700&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --clr-bg: #f3e5d7;
+  --clr-card: #fff;
+  --clr-heading: #7b4f2c;
+  --clr-section: #fff7fb;
+  --clr-accent: #854632;
+  --clr-list: #7b4f2c;
+  --clr-table-head: #854632;
+  --clr-table-bg: #fff7fb;
+  --clr-table-border: #e3ddd7;
+  --clr-text: #5f574e;
+  --clr-bold: #854632;
+  --radius: 1.5rem;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+body {
+  background: var(--clr-bg);
+  font-family: 'Outfit', Arial, sans-serif;
+  color: var(--clr-text);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background: var(--clr-card);
+  max-width: 600px;
+  width: 100%;
+  margin: 3rem 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+  color: var(--clr-heading);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  color: var(--clr-accent);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.prep-time {
+  background: var(--clr-section);
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.prep-time h3 {
+  color: var(--clr-accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  font-family: 'Outfit', Arial, sans-serif;
+}
+
+.prep-time ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.prep-time li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2 {
+  font-size: 1.3rem;
+  color: var(--clr-list);
+  font-family: 'Young Serif', serif;
+  margin-bottom: 1rem;
+}
+
+.instructions ol {
+  padding-left: 1.5rem;
+}
+
+.instructions li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.instructions li b {
+  color: var(--clr-bold);
+  font-weight: 700;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: var(--clr-table-bg);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.nutrition-table th,
+.nutrition-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.nutrition-table th {
+  color: var(--clr-table-head);
+  font-weight: 600;
+  background: var(--clr-table-bg);
+}
+
+.nutrition-table td {
+  border-top: 1px solid var(--clr-table-border);
+}
+
+.nutrition-table tr:last-child td {
+  border-bottom: none;
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #b7aa9a;
+}
+
+.attribution a {
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .card {
+    padding: 1.2rem 0.7rem;
+    margin: 1.5rem 0.3rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-
